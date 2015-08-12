@@ -40,6 +40,7 @@ namespace PracticeAlgo
                     min = min > a[i*2 + 1] ? a[i*2 + 1] : min;
                     count++;
 
+
                     max = max < a[i*2] ? a[i*2] : max;
                     count++;
 
