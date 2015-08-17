@@ -10,7 +10,8 @@ namespace PracticeAlgo
     {
         static void Main(string[] args)
         {
-            MinMax(args);
+            NextPalindrome.ComputeNextPalindrome(new int[] { 1, 2, 3, 2, 4, 5 });
+            //MinMax(args);
         }
     }
 }
