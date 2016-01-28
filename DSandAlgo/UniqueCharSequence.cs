@@ -8,7 +8,7 @@ namespace DSandAlgo
 {
     class UniqueCharSequence
     {
-        public void UCSequence()
+        static public void UCSequence()
         {
             int si = 0, ei = 0, ms = 0, me = 0, ml = 0, cl = 0;
             string str = "";
