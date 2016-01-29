@@ -11,7 +11,7 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            UniqueCharSequence.UCSequence();
+            DSandAlgo.List.ListReversal();   
         }
     }
 }
