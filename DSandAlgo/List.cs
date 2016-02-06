@@ -7,6 +7,7 @@ namespace DSandAlgo
 {
    public class List
     {
+       static Node head;
        public static void ListReversal()
        {
            Node a = new Node(); a.val = 3;
@@ -20,8 +21,9 @@ namespace DSandAlgo
            d.next = e;
            e.next = null;
            a.PrintLinkedList();
-           a=ReverseLinkedList(a);
-           a.PrintLinkedList();
+           a=ReverseLinkedListRec(a);
+           a.next = null;
+           head.PrintLinkedList();
        }
 
        static Node ReverseLinkedList(Node head)
@@ -39,17 +41,20 @@ namespace DSandAlgo
            
        }
 
-       static Node ReverseLinkedListRec(Node current, Node prev)
+       static Node ReverseLinkedListRec(Node current)
        {
+           
            
            if (current.next == null)
            {
-               return current;
+               head = current;   
+               return head;
            }
            else
            {
-               current = ReverseLinkedListRec(current.next, current);
-               current.next = prev;
+               Node tmp = ReverseLinkedListRec(current.next);
+               Console.WriteLine("tmp={0}, current={1}, current.next={2}", tmp.val, current.val, current.next.val);
+               tmp.next = current;
                return current;
            }
        }
@@ -62,10 +67,12 @@ namespace DSandAlgo
         public void PrintLinkedList()
         {
             Node head = this;
+            int count = 0;
             while(head!=null)
             {
                 Console.Write(head.val+"->");
                 head = head.next;
+                if (count++ > 7) break;
             }
             Console.WriteLine();
         }

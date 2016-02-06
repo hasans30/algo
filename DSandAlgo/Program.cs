@@ -11,7 +11,10 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.List.ListReversal();   
+            DSandAlgo.BuildBinaryTreeFromInAndPre.CallBuildTree();
+            //DSandAlgo.ReverseStringWByW.RevWbW("hi");
+            //DSandAlgo.List.ListReversal();   
+            //RegularExpression.TestRegex();
         }
     }
 }
