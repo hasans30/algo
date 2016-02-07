@@ -67,6 +67,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression.cs" />
+    <Compile Include="ReplaceSpaceWithpct20.cs" />
     <Compile Include="ReverseStringWByW.cs" />
     <Compile Include="RotateBinaryTree.cs" />
     <Compile Include="UniqueCharSequence.cs" />
