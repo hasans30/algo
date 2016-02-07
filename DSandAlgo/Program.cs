@@ -11,7 +11,8 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.LowestCommonAncestor.CallLCAHelper();
+            DSandAlgo.FindSumInTreePaths.CallFindSum();
+            //DSandAlgo.LowestCommonAncestor.CallLCAHelper();
             //DSandAlgo.BuildBinaryTreeFromInAndPre.CallBuildTree();
             //DSandAlgo.ReverseStringWByW.RevWbW("hi");
             //DSandAlgo.List.ListReversal();   

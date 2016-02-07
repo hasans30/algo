@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuildBinaryTreeFromInAndPre.cs" />
+    <Compile Include="FindSumInTreePaths.cs" />
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="PrintZigZag.cs" />
