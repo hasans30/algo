@@ -61,6 +61,7 @@
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MaxSubSum.cs" />
+    <Compile Include="Permutation.cs" />
     <Compile Include="PrintZigZag.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
