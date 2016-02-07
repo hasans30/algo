@@ -12,9 +12,29 @@ namespace DSandAlgo
         {
             char[] a = { 'a', 'b', 'c' };
             char [] res = new  char [5];
-            CombinationCalculation(a, a.Length, 2,0,0, res);
-
+            //CombinationCalculation(a, a.Length, 2,0,0, res);
+            CombinationRepeatation(a, a.Length, 2, 0, 0, res);
         }
+
+
+        public static void CombinationRepeatation(char[] a, int n, int k, int start, int level, char[] res)
+        {
+            if (k == level)
+            {
+                for (int i = 0; i <= k - 1; i++)
+                {
+                    Console.Write("{0}", res[i]);
+                }
+                Console.WriteLine();
+                return;
+            }
+            for (int i = start; i < n; i++)
+            {
+                res[level] = a[i];
+                CombinationCalculation(a, n, k, i, level + 1, res);
+            }
+        }
+
 
         public static void CombinationCalculation(char [] a, int n, int k, int start, int level, char [] res)
         {
