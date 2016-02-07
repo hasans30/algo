@@ -11,7 +11,8 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.Permutation.PermutationHelper();
+            DSandAlgo.Combinition.CombiHelper();
+            //DSandAlgo.Permutation.PermutationHelper();
             //DSandAlgo.MaxSubSum.CalculateMaxSubSum();
             //DSandAlgo.FindSumInTreePaths.CallFindSum();
             //DSandAlgo.LowestCommonAncestor.CallLCAHelper();
