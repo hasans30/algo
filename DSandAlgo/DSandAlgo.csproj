@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="BuildBinaryTreeFromInAndPre.cs" />
     <Compile Include="Combinition.cs" />
+    <Compile Include="CompressString.cs" />
     <Compile Include="FindSumInTreePaths.cs" />
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
