@@ -11,7 +11,8 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.CompressString.Compress();
+            DSandAlgo.BingSpellCorrection.CallPossibleSpells();
+            //DSandAlgo.CompressString.Compress();
             //DSandAlgo.ReplaceSpaceWithpct20.ReplaceWith20();
             //DSandAlgo.Combinition.CombiHelper();
             //DSandAlgo.Permutation.PermutationHelper();

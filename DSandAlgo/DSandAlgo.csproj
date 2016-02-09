@@ -56,9 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BingSpellCorrection.cs" />
     <Compile Include="BuildBinaryTreeFromInAndPre.cs" />
     <Compile Include="Combinition.cs" />
     <Compile Include="CompressString.cs" />
+    <Compile Include="DependencyOperation.cs" />
     <Compile Include="FindSumInTreePaths.cs" />
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
