@@ -11,7 +11,8 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.BingSpellCorrection.CallPossibleSpells();
+            DSandAlgo.FlattenLinkedListClass.CallFlattenLinkedList();
+            //DSandAlgo.BingSpellCorrection.CallPossibleSpells();
             //DSandAlgo.CompressString.Compress();
             //DSandAlgo.ReplaceSpaceWithpct20.ReplaceWith20();
             //DSandAlgo.Combinition.CombiHelper();

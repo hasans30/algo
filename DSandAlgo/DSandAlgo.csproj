@@ -62,6 +62,7 @@
     <Compile Include="CompressString.cs" />
     <Compile Include="DependencyOperation.cs" />
     <Compile Include="FindSumInTreePaths.cs" />
+    <Compile Include="FlattenLinkedList.cs" />
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MaxSubSum.cs" />
