@@ -11,7 +11,8 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.MazePath.CallMaze();
+            DSandAlgo.RotateArrayClass.CallRoteateMatrix();
+            //DSandAlgo.MazePath.CallMaze();
             //DSandAlgo.DependencyOperations.CallDependencyOperation();
             //DSandAlgo.FlattenLinkedListClass.CallFlattenLinkedList();
             //DSandAlgo.BingSpellCorrection.CallPossibleSpells();

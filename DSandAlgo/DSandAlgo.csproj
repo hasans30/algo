@@ -74,6 +74,7 @@
     <Compile Include="RegularExpression.cs" />
     <Compile Include="ReplaceSpaceWithpct20.cs" />
     <Compile Include="ReverseStringWByW.cs" />
+    <Compile Include="RotateArray.cs" />
     <Compile Include="RotateBinaryTree.cs" />
     <Compile Include="UniqueCharSequence.cs" />
   </ItemGroup>
