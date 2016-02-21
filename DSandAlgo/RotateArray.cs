@@ -61,6 +61,10 @@ namespace DSandAlgo
         public static void RotateMatrix(int[,] A, int sRow, int sCol, int n)
         {
 
+            //Algo :
+            // using rotate array logic (reverse first half, reverse second half, then whoe reverse) 
+            // Here we have combined columns and rows 
+
             int eCol = sCol + n - 1;
             //Reverse  first col and last col within themselvs
             for (int i = sRow, j = sRow + n - 1; i < j; i++, j--)
