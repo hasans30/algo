@@ -63,6 +63,8 @@
     <Compile Include="DependencyOperation.cs" />
     <Compile Include="FindSumInTreePaths.cs" />
     <Compile Include="FlattenLinkedList.cs" />
+    <Compile Include="GraphNode.cs" />
+    <Compile Include="GraphSearch.cs" />
     <Compile Include="List.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MaxSubSum.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="ReverseStringWByW.cs" />
     <Compile Include="RotateArray.cs" />
     <Compile Include="RotateBinaryTree.cs" />
+    <Compile Include="TreeSiblingPointers.cs" />
     <Compile Include="UniqueCharSequence.cs" />
   </ItemGroup>
   <ItemGroup>

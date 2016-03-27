@@ -11,18 +11,15 @@ namespace DSandAlgo
         static int cost = 0;
         public static void CallRoteateMatrix()
         {
-            int[,] A = new int[5, 5] {
-                //{1,2,3,4,5},
-                //{6,7,8,9,0},
-                //{1,2,3,4,5},
-                //{6,7,8,9,0},
-                //{1,2,3,4,5},
+            int[,] A = new int[2, 2] {
+                {1,2},
+                {3,4}
 
-                {1,1,1,1,1},
-                {1,1,0,1,1},
-                {1,1,1,1,1},
-                {1,1,0,1,1},
-                {1,1,1,1,1},
+                //{1,1,1,1,1},
+                //{1,1,0,1,1},
+                //{1,1,1,1,1},
+                //{1,1,0,1,1},
+                //{1,1,1,1,1},
 
             };
 
@@ -36,9 +33,9 @@ namespace DSandAlgo
 
             //RotateMatrix(A, 0, 0, 3);
 
-            RotateMatrixHelper(A, 0, 0, 5);
+            RotateMatrixHelper(A, 0,0, 2);
 
-            PrintMatrix(A,5);
+            PrintMatrix(A,2);
             Console.WriteLine(cost);
         }
 
@@ -53,7 +50,7 @@ namespace DSandAlgo
             for (int i = 0; i < N; i++)
             {
                 for (int j = 0; j < N; j++)
-                    Console.Write("{0} ", A[i,j]==1?"x":" ");
+                    Console.Write("{0} ", A[i,j]);
                 Console.WriteLine();
             }
         }
