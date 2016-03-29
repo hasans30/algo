@@ -51,6 +51,63 @@ namespace DSandAlgo
             FlattenLinkedList(current.right,store);
         }
 
+        //Fahad's solution
+
+        public static void CallFlattenByFahd()
+        {
+            Node head = new Node(1);
+            head.next = new Node(2);
+            head.next.down = new Node(4);
+            head.next.next = new Node(3);
+            head.next.down.down = new Node(6);
+            head.next.down.down.next = new Node(5);
+            head.next.down.down.next.next = new Node(7);
+
+            /**
+             * 1 -> 2
+             * |
+             * 3
+             */
+            Flatten(head);
+
+            while (head != null)
+            {
+                Console.WriteLine("{0}->", head.val);
+                head = head.next;
+            }
+        }
+
+        private static Node Last(Node n)
+        {
+            if (n == null)
+                return null;
+            else
+            {
+                while (n.next != null)
+                    n = n.next;
+            }
+
+            return n;
+        }
+
+        private static void Flatten(Node head)
+        {
+            Node next = null;
+            Node down = null;
+            while (head != null)
+            {
+                if (head.down != null)
+                {
+                    next = head.next;
+                    down = head.down;
+                    head.next = head.down;
+                    Last(down).next = next;
+                }
+                head = head.next;
+            }
+        }
+
+
 
     }
 }

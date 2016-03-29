@@ -11,7 +11,9 @@ namespace DSandAlgo
     {
         static void Main(string[] args)
         {
-            DSandAlgo.TreeSiblingPointers.CallTreeSiblingPointers();
+            DSandAlgo.List.CallPivotListByNumber();
+            //DSandAlgo.FlattenLinkedListClass.CallFlattenByFahd();
+            //DSandAlgo.TreeSiblingPointers.CallTreeSiblingPointers();
             //DSandAlgo.GraphSearch.CallBForDFSearch();
             //DSandAlgo.RotateArrayClass.CallRoteateMatrix();
             //DSandAlgo.MazePath.CallMaze();

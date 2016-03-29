@@ -26,6 +26,71 @@ namespace DSandAlgo
            head.PrintLinkedList();
        }
 
+       public static void CallPivotListByNumber()
+       {
+           Node a = new Node(); a.val = 3;
+           Node b = new Node(); b.val = 1;
+           Node c = new Node(); c.val = 4;
+           Node d = new Node(); d.val = 0;
+           Node e = new Node(); e.val = 5;
+           a.next = b;
+           b.next = c;
+           c.next = d;
+           d.next = e;
+           e.next = null;
+           a.PrintLinkedList();
+
+           a = PivotListByNumber(a, 2);
+           a.PrintLinkedList();
+
+       }
+
+       static Node PivotListByNumber(Node current,int num)
+       {
+           Node maxList=null, maxHead=null;
+           Node minList = null, minHead = null;
+           while(current!=null)
+           {
+               if(current.val>num)
+               {
+                   if(maxList==null)
+                   {
+                       maxList = current;
+                       maxHead = maxList;
+                   }
+                   else
+                   {
+                       maxList.next = current;
+                       maxList = maxList.next;
+                   }
+               }
+               else
+               {
+                   if(minList==null)
+                   {
+                       minList = current;
+                       minHead = minList;
+
+                   }
+                   else
+                   {
+                       minList.next = current;
+                       minList = minList.next;
+                   }
+
+               }
+               current = current.next;
+           }
+
+           if (minList != null)
+           {
+               minList.next = maxHead;
+           }
+           else
+               minList = maxHead;
+           return minHead;
+       }
+
        static Node ReverseLinkedList(Node head)
        {
                 Node prev=null;
@@ -64,6 +129,18 @@ namespace DSandAlgo
     {
         public int val;
         public Node next;
+        public Node down;
+        public Node()
+        {
+
+        }
+
+        public Node(int val)
+        {
+            this.val = val;
+            next = null;
+            down = null;
+        }
         public void PrintLinkedList()
         {
             Node head = this;
