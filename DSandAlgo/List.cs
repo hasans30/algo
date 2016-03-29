@@ -40,7 +40,7 @@ namespace DSandAlgo
            e.next = null;
            a.PrintLinkedList();
 
-           a = PivotListByNumber(a, 2);
+           a = PivotListByNumber(a, 11);
            a.PrintLinkedList();
 
        }
@@ -82,12 +82,12 @@ namespace DSandAlgo
                current = current.next;
            }
 
-           if (minList != null)
+           if (minHead != null)
            {
                minList.next = maxHead;
            }
            else
-               minList = maxHead;
+               minHead = maxHead;
            return minHead;
        }
 
